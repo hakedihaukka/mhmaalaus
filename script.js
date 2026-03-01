@@ -15,7 +15,7 @@ const pageRotatingWords = {
     'Lopputulos <span class="hero-word-highlight">mikä miellyttää</span>',
   ],
   "maalit.html": [
-    'Maalit <span class="hero-word-highlight">Joutsassa</span>',
+    'Maalit <span class="hero-word-highlight">Joutsasta</span>',
     'Tarkat <span class="hero-word-highlight">sävyt</span>',
     'Kilpailukykyiset <span class="hero-word-highlight">hinnat</span>',
   ],
