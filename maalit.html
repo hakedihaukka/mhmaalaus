@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automaalaamo Joutsa - Maalit, sävyt ja hinnat | MH Fix & Paint</title>
+  <meta
+    name="description"
+    content="Automaalaamo Joutsa: maalit, sävyt ja hinnat automaalaukseen. Maalipalvelut Joutsassa, lähialueilla ja Keski-Suomessa sekä freelancer maalaukset yrityksille."
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <header class="hero paint-hero" id="hero">
+    <nav class="hero-nav" aria-label="Sivunavigaatio">
+      <div class="hero-nav-inner">
+      <a class="hero-logo" href="index.html" aria-label="Etusivu">
+        <img src="assets/mhoikea.svg" alt="MH Logo" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="hero-menu" id="site-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="kuvat.html">Kuvat</a></li>
+        <li><a class="is-active" href="maalit.html" aria-current="page">Maalit</a></li>
+        <li><a class="nav-contact" href="yhteystiedot.html">Ota yhteyttä</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <p class="hero-kicker">Maalit</p>
+        <h1 class="hero-rotating-title" aria-live="polite">
+          <span id="hero-rotating-text">Maalit <span class="hero-word-highlight">Joutsassa</span></span>
+        </h1>
+        <p class="hero-lead">
+          Maalit sekoitettuna valmiiksi oikeaan sävyyn, kitit ja pohjamaalit löydät tältä sivulta.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-btn hero-btn-primary" href="#tuotteet">Katso tuotteet</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="tuotteet" class="gallery-section is-visible">
+      <div class="section-head">
+        <h2>Maalit ja maalaustarvikkeet</h2>
+        <p>Tuotteet on ryhmitelty nimen perusteella. Hinnat ovat esimerkkihintoja ja voivat vaihdella tuotteen koon sekä sävyn mukaan.</p>
+      </div>
+      <div class="product-filters" role="group" aria-label="Tuotekategoriat">
+        <button class="product-filter-btn is-active" type="button" data-filter="all">Kaikki tuotteet</button>
+        <button class="product-filter-btn" type="button" data-filter="automaalit">Automaalit</button>
+        <button class="product-filter-btn" type="button" data-filter="pohjamaalit">Pohjamaalit</button>
+        <button class="product-filter-btn" type="button" data-filter="kitit">Kitit</button>
+        <button class="product-filter-btn" type="button" data-filter="lakat">Lakat</button>
+        <button class="product-filter-btn" type="button" data-filter="kovettajat">Kovettajat</button>
+        <button class="product-filter-btn" type="button" data-filter="ohenteet">Ohenteet</button>
+        <button class="product-filter-btn" type="button" data-filter="rasvanpoistoaineet">Rasvanpoistoaineet</button>
+        <button class="product-filter-btn" type="button" data-filter="hiomalaikat">Hiomalaikat</button>
+        <button class="product-filter-btn" type="button" data-filter="hiomapaperit">Hiomapaperit</button>
+        <button class="product-filter-btn" type="button" data-filter="tarvikkeet">Tarvikkeet</button>
+      </div>
+      <div class="gallery-grid">
+        
+        <article class="gallery-card price-card product-card" data-category="automaalit">
+          <img src="tuotteet/merkkikohtmaali.webp" alt="Merkkikohtainen automaali" loading="lazy" />
+          <h3>Merkkikohtainen paikkaväri 30ml</h3>
+          <p class="paint-price">17.20€ / pullo</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="pohjamaalit">
+          <img src="tuotteet/mipapohjaväriharmaa.webp" alt="MIPA pohjaväri harmaa" loading="lazy" />
+          <h3>MIPA 1K N75 Filler spray 400ml harmaa spray</h3>
+          <p class="paint-price">18.90€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="pohjamaalit">
+          <img src="tuotteet/mipa1kepoksipohjamaali.webp" alt="MIPA 1K epoksipohjamaali" loading="lazy" />
+          <h3>MIPA 1K epoksipohjamaali 400ml spray</h3>
+          <p class="paint-price">22.90€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="pohjamaalit">
+          <img src="tuotteet/mipaepxpohjamaali.webp" alt="MIPA EPX pohjamaali" loading="lazy" />
+          <h3>MIPA EPX epoksipohjamaali 1L</h3>
+          <p class="paint-price">40.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="pohjamaalit">
+          <img src="tuotteet/mipaepxpohjamaalikovettaja.webp" alt="MIPA EPH pohjamaalin kovettaja" loading="lazy" />
+          <h3>MIPA EPH kovettaja 1L (Mipa EPX 2K epoksipohjamaalille)</h3>
+          <p class="paint-price">27.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="pohjamaalit">
+          <img src="tuotteet/mipaf54hiontavarikovettaja.webp" alt="MIPA F54 hiontavärin kovettaja" loading="lazy" />
+          <h3>MIPA FX4 hiontaväri + kovettaja 1,25l</h3>
+          <p class="paint-price">46.90€ / setti</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="kitit">
+          <img src="tuotteet/antirustkitti.webp" alt="Antirust kitti" loading="lazy" />
+          <h3>Carsystem Anti Rust kitti 1,8kg</h3>
+          <p class="paint-price">28.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="kitit">
+          <img src="tuotteet/mipap50kitti.webp" alt="MIPA P50 kitti" loading="lazy" />
+          <h3>MIPA P50 lasikuitukitti 250g</h3>
+          <p class="paint-price">10.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="kitit">
+          <img src="tuotteet/mipap90kitti.webp" alt="MIPA P90 kitti" loading="lazy" />
+          <h3>MIPA P90 2K Polyesteri kitti 1kg</h3>
+          <p class="paint-price">21,90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="kitit">
+          <img src="tuotteet/mipap902kitti.webp" alt="MIPA P90/2 kitti" loading="lazy" />
+          <h3>MIPA P90 2K Polyesteri kitti 250g</h3>
+          <p class="paint-price">11.90€ / purkki</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="lakat">
+          <img src="tuotteet/mipakirkaslakka.webp" alt="MIPA kirkaslakka" loading="lazy" />
+          <h3>MIPA CC8 HS 2:1 kirkaslakka 0,5l</h3>
+          <p class="paint-price">24.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="lakat">
+          <img src="tuotteet/mipakirkaslakka2.webp" alt="MIPA kirkaslakka 2" loading="lazy" />
+          <h3>MIPA CC12 HS kirkaslakka 2:1 1l</h3>
+          <p class="paint-price">43.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="lakat">
+          <img src="tuotteet/mipakirkaslakka3.webp" alt="MIPA kirkaslakka 3" loading="lazy" />
+          <h3>MIPA 1K akryyli kirkaslakkaspray 400ml</h3>
+          <p class="paint-price">16.90€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="lakat">
+          <img src="tuotteet/mipakirkaslakka4.webp" alt="MIPA kirkaslakka 4" loading="lazy" />
+          <h3>MIPA 2k kirkaslakkaspray 250ml</h3>
+          <p class="paint-price">36.90€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="lakat">
+          <img src="tuotteet/mipakirkaslakka5.webp" alt="MIPA kirkaslakka 5" loading="lazy" />
+          <h3>MIPA 2K kirkaslakkaspray 400ml</h3>
+          <p class="paint-price">46.90€ / pullo</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="kovettajat">
+          <img src="tuotteet/mipakovettaja.webp" alt="MIPA kovettaja" loading="lazy" />
+          <h3>MIPA HS10 kovettaja 0,25l / 0,50l / 1l</h3>
+          <p class="paint-price">25.90€ / 40.90€ / 56.90€ purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="kovettajat">
+          <img src="tuotteet/mipakovettaja2erihinnat.webp" alt="MIPA kovettaja eri hinnat" loading="lazy" />
+          <h3>MIPA HS25 kovettaja 0,25l / 0,50l / 1l</h3>
+          <p class="paint-price">25.90€ / 40.90€ / 56.90€ purkki</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="ohenteet">
+          <img src="tuotteet/mipaohenne.webp" alt="MIPA ohenne" loading="lazy" />
+          <h3>MIPA WBC ohenne 1l</h3>
+          <p class="paint-price">10.90€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="ohenteet">
+          <img src="tuotteet/mipaohenneerihinnat.webp" alt="MIPA ohenne eri hinnat" loading="lazy" />
+          <h3>MIPA V25 2K-ohenne 0,25l / 1l</h3>
+          <p class="paint-price">11.90€ / 22.90€</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="rasvanpoistoaineet">
+          <img src="tuotteet/miparasva.webp" alt="MIPA rasvanpoistoaine" loading="lazy" />
+          <h3>MIPA Silikonentferner 1l rasvanpoistoaine</h3>
+          <p class="paint-price">19.90€ / purkki</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="rasvanpoistoaineet">
+          <img src="tuotteet/miparasva2.webp" alt="MIPA rasvanpoistoaine 2" loading="lazy" />
+          <h3>MIPA Silikonentferner spray 400ml</h3>
+          <p class="paint-price">13.90€ / pullo</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="hiomalaikat">
+          <img src="tuotteet/carsystemhiomalaikkap80.webp" alt="Carsystem hiomalaikka P80" loading="lazy" />
+          <h3>Carsystem P25 hiomalaikat P80</h3>
+          <p class="paint-price">-</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="hiomalaikat">
+          <img src="tuotteet/carsystemhiomalaikkap80.webp" alt="Carsystem hiomalaikka P80" loading="lazy" />
+          <h3>Carsystem P25 hiomalaikat P120-P600</h3>
+          <p class="paint-price">-</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="tarvikkeet">
+          <img src="tuotteet/mipapölyliina.webp" alt="MIPA pölyliina" loading="lazy" />
+          <h3>Mipa pölyliina/liimarätti</h3>
+          <p class="paint-price">2.50€</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="tarvikkeet">
+          <img src="tuotteet/coladmuovilastat.webp" alt="Colad muovilastat" loading="lazy" />
+          <h3>Colad muovilastat punainen / musta</h3>
+          <p class="paint-price">7.90€ / 5kpl</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="tarvikkeet">
+          <img src="tuotteet/eurocelteippi19mm.webp" alt="Eurocel teippi 19 mm" loading="lazy" />
+          <h3>Eurocel maalarinteippi 19mm x 50m</h3>
+          <p class="paint-price">3.30€ / rulla</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="tarvikkeet">
+          <img src="tuotteet/eurocelteippi38mm.webp" alt="Eurocel teippi 38 mm" loading="lazy" />
+          <h3>Eurocel maalarinteippi 38mm x 50m</h3>
+          <p class="paint-price">4.90€ / rulla</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="tarvikkeet">
+          <img src="tuotteet/japanlasta.webp" alt="Japanlasta" loading="lazy" />
+          <h3>Japanlastasarja</h3>
+          <p class="paint-price">5.90€ / 4kpl</p>
+        </article>
+
+        <article class="gallery-card price-card product-card" data-category="hiomapaperit">
+          <img src="tuotteet/mirkasofthiomapaperi.webp" alt="Mirka soft hiomapaperi" loading="lazy" />
+          <h3>Mirka Goldflex Soft 115mm x 25m P120-P80</h3>
+          <p class="paint-price">-</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-logo" href="index.html#etusivu" aria-label="Etusivulle">
+      <img src="assets/mhoikea.svg" alt="MH Maalauspalvelut logo" />
+    </a>
+    <p>Automaalaamo Joutsa - palvelu Joutsa, lähialueet ja Keski-Suomi | Y-tunnus: 1234567-8</p>
+    <p>Osoite: Joutsa, Keski-Suomi</p>
+    <p>Puhelin 040 123 4567</p>
+    <p>Sähköposti info@mhmaalaus.fi</p>
+    <p class="footer-legal"><a href="tietosuojaseloste.html">Tietosuojaseloste ja evästeet</a></p>
+    <div class="footer-social" aria-label="Sosiaalinen media">
+      <a class="social-link social-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5zm8.9 1.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5z"/>
+        </svg>
+      </a>
+      <a class="social-link social-facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.5 22v-8.2h2.8l.42-3.2H13.5V8.55c0-.93.27-1.56 1.61-1.56h1.72V4.13c-.3-.04-1.33-.13-2.53-.13-2.5 0-4.22 1.5-4.22 4.27v2.4H7.2v3.2h2.83V22h3.47z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

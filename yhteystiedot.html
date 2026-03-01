@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yhteystiedot - Automaalaamo Joutsa | MH Fix & Paint</title>
+  <meta
+    name="description"
+    content="Ota yhteyttä automaalaamo Joutsaan. Tarjoamme automaalaukset, freelancer maalaukset ja muut maalaukset Joutsassa, lähialueilla ja Keski-Suomen maakunnassa."
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <header class="hero contact-hero" id="hero">
+    <nav class="hero-nav" aria-label="Sivunavigaatio">
+      <div class="hero-nav-inner">
+      <a class="hero-logo" href="index.html" aria-label="Etusivu">
+        <img src="assets/mhoikea.svg" alt="MH Logo" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Avaa valikko" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="hero-menu" id="site-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="kuvat.html">Kuvat</a></li>
+        <li><a href="maalit.html">Maalit</a></li>
+        <li><a class="nav-contact is-active" href="yhteystiedot.html" aria-current="page">Yhteystiedot</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <p class="hero-kicker">Yhteystiedot</p>
+        <h1 class="hero-rotating-title" aria-live="polite">
+          <span id="hero-rotating-text">Yhteystiedot <span class="hero-word-highlight">Joutsa</span></span>
+        </h1>
+        <p class="hero-lead">
+          Saat meiltä selkeän arvion työn sisällöstä, hinnasta ja aikataulusta.
+          Soita, lähetä viesti tai täytä lomake, niin palaamme asiaan mahdollisimman pian.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-btn hero-btn-primary" href="#yhteystiedot-kortit">Yhteystiedot</a>
+          <a class="hero-btn hero-btn-secondary" href="#lomake">Pyydä tarjous</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="contact-page-main">
+    <section id="yhteystiedot-kortit" class="info-section contact-section">
+      <div class="contact-page-grid">
+        <article class="info-card contact-detail-card">
+          <h2>MH Maalauspalvelut - automaalaamo Joutsa</h2>
+          <p><strong>Puhelin:</strong> <a href="tel:+358401234567">040 123 4567</a></p>
+          <p><strong>Sähköposti:</strong> <a href="mailto:info@mhmaalaus.fi">info@mhmaalaus.fi</a></p>
+          <p><strong>Aukiolo:</strong> Arkisin klo 8.00-17.00</p>
+          <p><strong>Palvelualue:</strong> Joutsa, Joutsan lähialueet ja Keski-Suomi</p>
+          <p>
+            Jos et ole varma työn laajuudesta, lähetä kuva kohteesta ja lyhyt kuvaus.
+            Autamme mielellämme sopivan kokonaisuuden suunnittelussa.
+            Palvelemme myös Hartolassa, Luhangassa, Toivakassa ja Kangasniemellä.
+          </p>
+        </article>
+
+        <article class="info-card contact-map-card-page">
+          <h2>Sijainti</h2>
+          <div class="contact-map-wrap">
+            <iframe
+              title="MH Maalauspalvelut kartalla"
+              src="https://www.google.com/maps?q=Joutsa,+Finland&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="lomake" class="info-section alt-bg contact-form-section">
+      <h2>Yhteydenottolomake</h2>
+      <p>Kerro kohde, aikataulu ja mahdolliset erityistoiveet. Palaamme asiaan mahdollisimman pian Joutsasta.</p>
+
+      <form class="contact-form-page js-formspree-form" action="https://formspree.io/f/mvzbbwyz" method="post">
+        <input type="hidden" name="_subject" value="Uusi yhteydenotto - Yhteystiedot" />
+        <label for="form-name">Nimi</label>
+        <input id="form-name" name="name" type="text" autocomplete="name" required />
+
+        <label for="form-phone">Puhelin</label>
+        <input id="form-phone" name="phone" type="tel" autocomplete="tel" />
+
+        <label for="form-email">Sähköposti</label>
+        <input id="form-email" name="email" type="email" autocomplete="email" required />
+
+        <label for="form-subject">Aihe</label>
+        <input id="form-subject" name="subject" type="text" placeholder="Esim. automaalaus" required />
+
+        <label for="form-message">Viesti</label>
+        <textarea
+          id="form-message"
+          name="message"
+          rows="6"
+          placeholder="Kerro kohteesta mahdollisimman tarkasti"
+          required
+        ></textarea>
+
+        <div class="spam-trap" aria-hidden="true">
+          <label for="form-website">Verkkosivu</label>
+          <input id="form-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="page-cta">Lähetä yhteydenotto</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-logo" href="index.html#etusivu" aria-label="Etusivulle">
+      <img src="assets/mhoikea.svg" alt="MH Maalauspalvelut logo" />
+    </a>
+    <p>Automaalaamo Joutsa - palvelu Joutsa, lähialueet ja Keski-Suomi | Y-tunnus: 1234567-8</p>
+    <p>Osoite: Joutsa, Keski-Suomi</p>
+    <p>Puhelin 040 123 4567</p>
+    <p>Sähköposti info@mhmaalaus.fi</p>
+    <p class="footer-legal"><a href="tietosuojaseloste.html">Tietosuojaseloste ja evästeet</a></p>
+    <div class="footer-social" aria-label="Sosiaalinen media">
+      <a class="social-link social-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5zm8.9 1.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5z"/>
+        </svg>
+      </a>
+      <a class="social-link social-facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.5 22v-8.2h2.8l.42-3.2H13.5V8.55c0-.93.27-1.56 1.61-1.56h1.72V4.13c-.3-.04-1.33-.13-2.53-.13-2.5 0-4.22 1.5-4.22 4.27v2.4H7.2v3.2h2.83V22h3.47z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
