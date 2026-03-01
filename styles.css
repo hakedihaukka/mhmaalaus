@@ -1559,6 +1559,15 @@ body.subpage #tuotteet .section-head h2 {
   text-align: center;
 }
 
+body.subpage #automaalaus-kuvat .section-head h2,
+body.subpage #freelancer-kuvat .section-head h2,
+body.subpage #muut-kuvat .section-head h2,
+body.subpage #automaalaus-kuvat .section-head > p,
+body.subpage #freelancer-kuvat .section-head > p,
+body.subpage #muut-kuvat .section-head > p {
+  text-align: center;
+}
+
 body.subpage .section-head p, body.subpage .info-section > p {
   max-width: 980px;
   margin-left: auto;
