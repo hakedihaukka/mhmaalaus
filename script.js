@@ -432,18 +432,24 @@ function initProductFilters() {
   const cards = Array.from(document.querySelectorAll(".product-card[data-category]"));
   const filterButtons = Array.from(document.querySelectorAll(".product-filter-btn[data-filter]"));
   const quickFilterLinks = Array.from(document.querySelectorAll("[data-quick-filter]"));
+  const searchInput = document.querySelector("[data-product-search]");
+  let activeFilter = "all";
+  let searchTerm = "";
 
   if (!cards.length || !filterButtons.length) return;
 
-  function applyFilter(filter) {
+  function applyFilter() {
     cards.forEach((card) => {
       const category = card.getAttribute("data-category");
-      const shouldShow = filter === "all" || category === filter;
+      const matchesCategory = activeFilter === "all" || category === activeFilter;
+      const cardText = (card.textContent || "").toLowerCase();
+      const matchesText = !searchTerm || cardText.includes(searchTerm);
+      const shouldShow = matchesCategory && matchesText;
       card.classList.toggle("is-hidden", !shouldShow);
     });
 
     filterButtons.forEach((button) => {
-      const isActive = button.getAttribute("data-filter") === filter;
+      const isActive = button.getAttribute("data-filter") === activeFilter;
       button.classList.toggle("is-active", isActive);
       button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
@@ -452,18 +458,26 @@ function initProductFilters() {
   filterButtons.forEach((button) => {
     button.setAttribute("aria-pressed", button.classList.contains("is-active") ? "true" : "false");
     button.addEventListener("click", () => {
-      applyFilter(button.getAttribute("data-filter") || "all");
+      activeFilter = button.getAttribute("data-filter") || "all";
+      applyFilter();
     });
   });
 
   quickFilterLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      const filter = link.getAttribute("data-quick-filter") || "all";
-      applyFilter(filter);
+      activeFilter = link.getAttribute("data-quick-filter") || "all";
+      applyFilter();
     });
   });
 
-  applyFilter("all");
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      searchTerm = searchInput.value.trim().toLowerCase();
+      applyFilter();
+    });
+  }
+
+  applyFilter();
 }
 
 startHeroTextLoop();

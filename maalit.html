@@ -14,9 +14,9 @@
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="manifest" href="assets/site.webmanifest" />
   <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="subpage">
   <header class="hero paint-hero" id="hero">
     <nav class="hero-nav" aria-label="Sivunavigaatio">
       <div class="hero-nav-inner">
@@ -59,9 +59,22 @@
     <section id="tuotteet" class="gallery-section is-visible">
       <div class="section-head">
         <h2>Maalit ja maalaustarvikkeet</h2>
-        <p>Tuotteet on ryhmitelty nimen perusteella. Hinnat ovat esimerkkihintoja ja voivat vaihdella tuotteen koon sekä sävyn mukaan.</p>
+        <div class="paint-brand-box">
+          <img src="assets/mipajaoc.png" alt="MIPA ja OC värijärjestelmät" loading="lazy" />
+          <p>Valikoimassamme on MIPA kaksikomponenttiset akryyli pintamaalit ja vesipohjainen WBC 2/3-kerros massa.</p>
+        </div>
+        <p>Meillä on kattava värikirjasto ja käytössämme on uusin värinmittaustekniikka. <br> Tuotteet on ryhmitelty nimen perusteella. Hinnat ovat esimerkkihintoja ja voivat vaihdella tuotteen koon sekä sävyn mukaan.</p>
       </div>
       <div class="product-filters" role="group" aria-label="Tuotekategoriat">
+        <div class="product-search">
+          <input
+            type="search"
+            id="product-search"
+            data-product-search
+            placeholder="Etsi tuotteista vapaalla tekstillä..."
+            aria-label="Etsi tuotteista vapaalla tekstillä"
+          />
+        </div>
         <button class="product-filter-btn is-active" type="button" data-filter="all">Kaikki tuotteet</button>
         <button class="product-filter-btn" type="button" data-filter="automaalit">Automaalit</button>
         <button class="product-filter-btn" type="button" data-filter="pohjamaalit">Pohjamaalit</button>
@@ -80,6 +93,12 @@
           <img src="tuotteet/merkkikohtmaali.webp" alt="Merkkikohtainen automaali" loading="lazy" />
           <h3>Merkkikohtainen paikkaväri 30ml</h3>
           <p class="paint-price">17.20€ / pullo</p>
+        </article>
+        <article class="gallery-card price-card product-card" data-category="automaalit">
+          <img src="tuotteet/mipakaksikerrosmassa.webp" alt="MIPA kaksikerrosmassa" loading="lazy" />
+          <h3>MIPA WBC kaksikerrosmassa</h3>
+          <p>Mipa WBC-2/3-kerrossävymassaa käytetään henkilöautojen, hyötyajoneuvojen, moottoripyörien sekä erikoisrakenteiden pintamaalauksiin.</p>
+          <p class="paint-price">104.90€ / litra</p>
         </article>
 
         <article class="gallery-card price-card product-card" data-category="pohjamaalit">
@@ -201,7 +220,7 @@
 
         <article class="gallery-card price-card product-card" data-category="tarvikkeet">
           <img src="tuotteet/mipapölyliina.webp" alt="MIPA pölyliina" loading="lazy" />
-          <h3>Mipa pölyliina/liimarätti</h3>
+          <h3>MIPA pölyliina/liimarätti</h3>
           <p class="paint-price">2.50€</p>
         </article>
         <article class="gallery-card price-card product-card" data-category="tarvikkeet">
@@ -238,7 +257,13 @@
     <a class="footer-logo" href="index.html#etusivu" aria-label="Etusivulle">
       <img src="assets/mhoikea.svg" alt="MH Maalauspalvelut logo" />
     </a>
-    <p>Automaalaamo Joutsa - palvelu Joutsa, lähialueet ja Keski-Suomi | Y-tunnus: 1234567-8</p>
+    <nav class="footer-nav" aria-label="Footer navigaatio">
+      <a href="index.html">Etusivu</a>
+      <a href="kuvat.html">Kuvat</a>
+      <a href="maalit.html">Maalit</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+    <p>MH Fix & Paint - Automaalaamo ja maalikauppa Joutsa | Y-tunnus: 1234567-8</p>
     <p>Osoite: Joutsa, Keski-Suomi</p>
     <p>Puhelin 040 123 4567</p>
     <p>Sähköposti info@mhmaalaus.fi</p>
