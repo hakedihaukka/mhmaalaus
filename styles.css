@@ -1555,6 +1555,10 @@ body.subpage .section-head h2, body.subpage .info-section h2 {
   letter-spacing: -0.02em;
 }
 
+body.subpage #tuotteet .section-head h2 {
+  text-align: center;
+}
+
 body.subpage .section-head p, body.subpage .info-section > p {
   max-width: 980px;
   margin-left: auto;
